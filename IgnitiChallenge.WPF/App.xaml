@@ -1,0 +1,19 @@
+﻿<Application x:Class="IgnitiChallenge.WPF.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:IgnitiChallenge.WPF" 
+             xmlns:views="clr-namespace:IgnitiChallenge.WPF.Views"
+             xmlns:viewmodels="clr-namespace:IgnitiChallenge.WPF.ViewModels">
+    <Application.Resources>
+       
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+            </ResourceDictionary.MergedDictionaries>
+            
+            <DataTemplate DataType="{x:Type viewmodels:BitcoinVisualizeViewModel}">
+                <views:BitcoinVisualizeView />
+            </DataTemplate>
+        </ResourceDictionary>
+
+    </Application.Resources>
+</Application>
